@@ -1,7 +1,7 @@
 
 #container-second-nav{
     width: 80%;
-    margin:30px auto 20px auto;
+    margin:0.8rem auto 1rem auto;
 
     /*margin-top:50px;*/
 }
@@ -11,9 +11,9 @@
 }
 #container-second-nav input{
     width: 90%;
-    height: 3.3rem;
+    height: 2rem;
     border-radius: 1rem;
-    font-size:2rem;
+    font-size:1rem;
     border:1px solid rgba(0,0,0,.1);
     background-color:rgba(0,0,0,.1);
 }
@@ -27,53 +27,54 @@
     width: 100%;
     /*height: 300px;*/
     /*line-height: 100px;*/
-    font-size:2rem;
+    font-size:0.8rem;
 }
-#container-second-content .empty-box{
+.empty-box{
     width: 100%;
-    height: 300px;
+    height: 8rem;
     border-top:1px solid rgba(0,0,0,.7);
     border-bottom:1px solid rgba(0,0,0,.7);
 }
-#container-second-content img{
-    width: 35%;
-    margin:10px;
+.empty-box img{
+    width: 20%;
+    margin:2%;
     float:left;
 }
 #container-second-content ul{
     width:42%;
-    float:left;
-    margin-top:10px;
-    margin-left:3%;
+    float:right;
+    /*margin-top:10px;*/
+    margin-right:26%;
 
     /*display:inline-block;*/
 }
-#container-second-content ul li{
-    margin:40px 0;
+.empty-box ul li{
+    margin:2rem 0;
 }
-#container-second-content .font-left{
+.empty-box .font-left{
     float:left;
 }
-#container-second-content .font-right{
-    color:rgba(0,0,0,.7);
-    font-size:1.5rem;
+.empty-box .font-right{
+    /*margin-left:2rem;*/
+    color:rgba(0,0,0,.3);
+    font-size:1rem;
 }
 /*ҳ������css*/
 
 #container-third-nav{
     width: 80%;
-    margin:30px auto 20px auto;
+    margin:1rem auto 1.2rem auto;
 
     /*margin-top:50px;*/
 }
 #container-second-nav-font{
     margin-left:10px;
-    font-size:2rem;
+    font-size:1rem;
 }
 #container-third-nav input{
     width: 90%;
-    height: 3.3rem;
-    font-size:2rem;
+    height: 2rem;
+    font-size:1rem;
     border-radius: 1rem;
     border:1px solid rgba(0,0,0,.1);
     background-color:rgba(0,0,0,.1);
@@ -84,7 +85,6 @@
 }
 #container-third-banner{
     width: 100%;
-    height: 300px;
 }
 #container-third-banner img{
     width: 100%;
@@ -92,17 +92,19 @@
 }
 #container-third-font{
     margin-left:10px;
-    font-size:2rem;
-    margin-top:20px;
+    font-size:1.3rem;
+    margin-top:0.5rem;
 }
 #container-third-content{
-    font-size:2rem;
+    font-size:1rem;
     width: 100%;
+
 }
 #container-third-content li{
     width: 48%;
     float:left;
-    margin:0 7px;
+    margin:0 1%;
+    margin-bottom:0.8rem;
 }
 #container-third-content img{
     width: 100%;
@@ -118,13 +120,13 @@
 /*��4ҳcss*/
 
 /*#container-four{*/
-    /*margin-top:30px;*/
+/*margin-top:30px;*/
 /*}*/
 #container-four li{
     width: 100%;
-    height: 70px;
-    font-size:2rem;
-    line-height: 70px;
+    height: 3rem;
+    font-size:1.2rem;
+    line-height: 3rem;
 }
 #container-four li span:nth-child(2){
     float:right;
@@ -143,111 +145,103 @@
 #singNav audio{
     width:768px;
     height: 40px;
-    background:url(../img/1.jpg);
+    /*background:url(../img/1.jpg);*/
     position:fixed;
     left: 0;
     bottom:0;
     z-index: 9999;
 }
-@media screen and (width:768px){
-    /*#container-box{*/
-    /*width: 20000px;*/
-    /*}*/
-    .wrapper{
-        width: 768px;
-    }
-    #nav{
-        /*width: 100%;*/
-        height: 6%;
-    }
-    #nav h1{
-        line-height: 200%;
-        font-size:1.5rem;
-    }
+#music{
+    position:absolute;
+    left: 0;
+    right:0;
+    bottom:0;
+    top:0;
+    display: none;
+    z-index: 999;
+    background:#f9f9f9;
 }
-@media screen and (max-width:414px){
-    /*#container-box{*/
-    /*width: 20000px;*/
-    /*}*/
-    .wrapper{
+#music-btn{
+    display: inline-block;
+    background: white;
+    color:rgba(0,0,0,.7);
+    border-radius:50%;
+}
+#singer-list{
+    position:absolute;
+    left: 0;
+    right:0;
+    bottom:0;
+    top:0;
+    display: none;
+    z-index: 999;
+    background:#f9f9f9;
+}
+#singer-list span{
+    display: inline-block;
+    background: white;
+    color:rgba(0,0,0,.7);
+    border-radius:50%;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:768px) {
+    html, body {
+        font-size: 14px;
+    }
+
+    #container-box {
         width: 414px;
-        margin-top:40px;
     }
-    #nav{
-        /*width: 100%;*/
-        height: 6%;
-    }
-    .carousel-tab{
-        right:38%;
-    }
-    #news-ipt input{
-        height: 26px;
-        font-size: 1rem;
-    }
-    #news-ipt{
-        margin-top:20px;
-    }
-    #nav h1{
-        line-height: 200%;
-        font-size:1.5rem;
-    }
-    #classify{
-        margin:1rem 0;
 
+    .wrapper {
+        width: 100%;
     }
-    #classify a{
-        font-size:1.8rem;
-    }
-    #content-imgs div span{
-        font-size:1.5rem;
-    }
-    #container-third-content li{
-        width:46%;
-    }
-    #marketing-content ul:first-child{
-        width:29%;
-    }
-    #marketing-content ul:first-child img{
-        width:100%;
-    }
-    #marketing-content ul:nth-child(2){
-        font-size:1rem;
-    }
-    #marketing-content-font .font-left{
-        width:115px;
-        margin-right:40px;
-    }
-    #marketing-content-font li{
-        margin-top:12px;
-        height:23px;
-        margin-left:5px;
 
+    #marketing-content-font li {
+        line-height: 3.6rem
     }
-    #container-second-nav input{
-        height: 26px;
-        font-size:1rem;
-    }
-    #container-second-content ul{
-        font-size:1rem;
 
-    }
-    #container-second-content .empty-box{
-        height: 176px;
-    }
-    #container-third-nav input{
-        height: 26px;
-        font-size:1rem;
-    }
-    #container-third-banner{
-        height: 170px;
-    }
-    #container-four ul li{
-        margin-top:10px;
-        font-size:1rem;
-        height:30px;
-        line-height: 36px;
+.empty-box {
+        height: 7rem;
     }
 }
+    @media screen and (width:768px){
+        #big-container{
+            width:768px;
+        }
+        #container-box{
+            width: 768px;
+        }
+        .wrapper{
+            width: 768px;
+        }
+        #container-second-content .empty-box{
+            height:14rem;
+        }
+    }
+    @media screen and (width:1024px){
+        #big-container{
+            width:1024px;
+        }
+        #container-box{
+            width: 1024px;
+        }
+        .wrapper{
+            width: 1024px;
+        }
+        #container-second-content .empty-box{
+            height:14rem;
+        }
+    }
+
 @media screen and (width:360px){
     #container-box{
         width: 360px;
@@ -299,11 +293,13 @@
     }
 }
 @media screen and (width:375px){
-    #container-third-nav{
-        margin:-16px auto 20px auto;
+    #container-box{
+        width:375px;
     }
     .wrapper{
         width: 375px;
     }
+    #nav{
+        width: 100%;
+    }
 }
-

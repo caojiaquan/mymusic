@@ -2,7 +2,8 @@
 class Welcome extends CI_Controller {
 	public function index()
 	{
-	    $topid = 5;
+
+	    $topid  = 5;
         $this -> load -> model('music_model');
         $result = $this -> music_model -> get_music_type_by_topid($topid);
         $this -> session -> set_userdata('Music',$result);
